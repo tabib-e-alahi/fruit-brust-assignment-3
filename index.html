@@ -57,21 +57,20 @@
         border: 1px solid rgba(18, 18, 18, 0.1);
       }
 
-      @media screen and (min-width:426px) {
-        .meet-bg{
-        border-radius: 8px;
-background: rgba(18, 18, 18, 0.8);
-      }
-        
+      @media screen and (min-width: 426px) {
+        .meet-bg {
+          border-radius: 8px;
+          background: rgba(18, 18, 18, 0.8);
+        }
       }
     </style>
 
     <title>Fruit-Burst</title>
   </head>
 
-  <body class="w-[90%] lg:w-[80%] mx-auto sm:mt-11 md:mt-10 lg:mt-11">
+  <body class="sm:mt-11 md:mt-10 lg:mt-11">
     <!-- ====================================Header section========================= -->
-    <header>
+    <header class="w-[90%] lg:w-[80%] mx-auto">
       <!-- ====================================Nav section========================= -->
       <nav
         class="navbar lg:bg-primary-color px-0 lg:py-7 lg:px-12 lg:rounded-[600px]"
@@ -369,7 +368,8 @@ background: rgba(18, 18, 18, 0.8);
       </section>
     </header>
 
-    <main>
+    <!-- ==================================== Main section========================= -->
+    <main class="w-[90%] lg:w-[80%] mx-auto">
       <!-- ================================= Deal of the day section===================================== -->
       <section class="my-12 md:my-16 lg:my-36">
         <!-- ================================= Deal of the day text area===================================== -->
@@ -567,10 +567,7 @@ background: rgba(18, 18, 18, 0.8);
       <!-- ====================================== Modals Area========================================= -->
       <section>
         <!-- ==================================== Modal for card-1 ===============================       -->
-        <dialog
-          id="my_modal_1"
-          class="modal  sm:modal-middle w-4/5 mx-auto"
-        >
+        <dialog id="my_modal_1" class="modal sm:modal-middle w-4/5 mx-auto">
           <form method="dialog" class="modal-box">
             <div class="card">
               <figure class="p-0">
@@ -611,7 +608,7 @@ background: rgba(18, 18, 18, 0.8);
         </dialog>
 
         <!-- ==================================== Modal for card-2 ===============================       -->
-        <dialog id="my_modal_2" class="modal  sm:modal-middle w-4/5 mx-auto">
+        <dialog id="my_modal_2" class="modal sm:modal-middle w-4/5 mx-auto">
           <form method="dialog" class="modal-box">
             <div class="card">
               <figure class="p-0">
@@ -652,7 +649,7 @@ background: rgba(18, 18, 18, 0.8);
         </dialog>
 
         <!-- ==================================== Modal for card-3 ===============================       -->
-        <dialog id="my_modal_3" class="modal  sm:modal-middle w-4/5 mx-auto">
+        <dialog id="my_modal_3" class="modal sm:modal-middle w-4/5 mx-auto">
           <form method="dialog" class="modal-box">
             <div class="card">
               <figure class="p-0">
@@ -693,7 +690,7 @@ background: rgba(18, 18, 18, 0.8);
         </dialog>
 
         <!-- ==================================== Modal for card-4 ===============================       -->
-        <dialog id="my_modal_4" class="modal  sm:modal-middle w-4/5 mx-auto">
+        <dialog id="my_modal_4" class="modal sm:modal-middle w-4/5 mx-auto">
           <form method="dialog" class="modal-box">
             <div class="card">
               <figure class="p-0">
@@ -737,18 +734,24 @@ background: rgba(18, 18, 18, 0.8);
       <!-- ===================================== Meet the team section =============================== -->
 
       <section class="mb-16 md:mb-24 lg:mb-36">
-        <div class="hero rounded-lg" style="background-image: url('images/team.png')">
-          <div class="hero-overlay meet-bg "></div>
+        <div
+          class="hero rounded-lg"
+          style="background-image: url('images/team.png')"
+        >
+          <div class="hero-overlay meet-bg"></div>
           <div class="hero-content text-center text-white pt-32 pb-24 lg:w-4/5">
             <div class="w-full">
-              <h1 class="mb-6 text-2xl lg:text-5xl font-bold">Meet the team section</h1>
+              <h1 class="mb-6 text-2xl lg:text-5xl font-bold">
+                Meet the team section
+              </h1>
               <p class="mb-16 w-4/5 text-sm lg:text-xl lg:w-3/5 mx-auto">
                 Contrary to popular belief, is not simply random text. It has
                 roots in a piece of classical Latin literature from 45 BC,
                 making it over 2000 years old.
               </p>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[100px]">
-
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[100px]"
+              >
                 <div class="card">
                   <figure class="p-0">
                     <img src="images/member1.png" alt="Apple" class="mb-6" />
@@ -805,12 +808,51 @@ background: rgba(18, 18, 18, 0.8);
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <!-- ==================================== Footer section========================= -->
+
+    <footer class="footer footer-center py-24 bg-btn-black rounded">
+
+      <div class="items-center grid-flow-col">
+        <img src="images/logo.png" alt="" />
+        <p class="text-4xl font-bold text-white">Fruit Burst</p>
+      </div>
+
+      <div class="grid grid-cols-4 md:grid-flow-col gap-8 lg:gap-14 my-4">
+
+        <a class="text-sm lg:text-lg font-semibold text-white lg:p-0">Home</a>
+        <a class="text-sm lg:text-lg font-semibold text-white lg:p-0"
+          >About Us</a
+        >
+        <a class="text-sm lg:text-lg font-semibold text-white lg:p-0">Shop</a>
+        <a class="text-sm lg:text-lg font-semibold text-white lg:p-0"
+          >All Fruits</a
+        >
+       
+          <a class="text-sm lg:text-lg font-semibold text-white lg:p-0 col-span-2 md:col-span-1"
+            >Support</a
+          >
+          <a class="text-sm lg:text-lg font-semibold text-white lg:p-0 col-span-2 md:col-span-1"
+            >My Account</a
+          >
+       
+      </div>
+      <div>
+        <div class="grid grid-flow-col gap-6 md:gap-10">
+          <img src="images/twitter 1.svg" alt="" />
+          <img src="images/facebook 1.svg" alt="" />
+          <img src="images/Group 49.svg" alt="" />
+          <img src="images/linkedin 1.svg" alt="" />
+          <img src="images/instagram 1.svg" alt="" />
+          <img src="images/apple 1.svg" alt="" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
