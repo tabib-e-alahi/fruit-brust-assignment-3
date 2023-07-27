@@ -49,6 +49,9 @@
       .bg-custom-gradient {
   background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
 }
+.card-border{
+  border: 1px solid rgba(18, 18, 18, 0.10);
+}
     </style>
 
     <title>Fruit-Burst</title>
@@ -358,14 +361,13 @@
 
     <main>
       <!-- ================================= Deal of the day section===================================== -->
-
-      <section class="mt-6 md:mt-16 lg:mt-36 ">
+      <section class="mt-12 md:mt-16 lg:mt-36 ">
 
         <!-- ================================= Deal of the day text area===================================== -->
-        <div class="lg:flex justify-between items-center lg:mb-12">
+        <div class="lg:flex justify-between items-center mb-10 lg:mb-12">
           <div class="w-4/5 md:w-3/5 mx-auto lg:w-3/5 text-center lg:mx-0 lg:text-left ">
             <h1 class=" text-2xl md:text-5xl font-extrabold mb-2 md:mb-4 lg:mb-6">Deal of the day</h1>
-            <p class=" w-full lg:w-4/5 text-sm lg:text-base font-medium text-[##111099] leading-6 mb-5 lg:mb-0">
+            <p class=" w-full lg:w-4/5 text-sm lg:text-base font-medium text-slate-500 leading-6 mb-5 lg:mb-0">
               Contrary to popular belief, is not simply random text. It has roots
               in a piece of classical Latin literature from 45 BC, making it over
               2000 years old.
@@ -445,6 +447,75 @@
             </div>
           </div>
         </div>
+ <!-- ================================= Deal of the day CARDS area===================================== -->
+        
+ <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 mb-6 md:mb-8 lg:mb-12">
+
+  <!-- =================== Card-1 ================= -->
+  <div class="card card-border">
+    <figure class="p-0">
+      <img src="images/fruit6.png" alt="Apple" class="mt-14 mb-12" />
+    </figure>
+    <div class="card-body p-0 items-center text-center">
+      <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+      <hr class="h-[1px] w-[244px] bg-dark my-4">
+      <p class="text-base font-medium mb-4">Apple</p>
+      <img class="mb-6" src="images/Group 24.svg" alt="">
+      <div class="card-actions">
+        <button class="text-lg font-bold text-primary-color mb-12">Details</button>
+      </div>
+    </div>
+  </div>
+  <!-- =================== Card-2 ================= -->
+  <div class="card card-border">
+    <figure class="p-0">
+      <img src="images/fruit7.png" alt="Orange" class="mt-14 mb-12" />
+    </figure>
+    <div class="card-body p-0 items-center text-center">
+      <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+      <hr class="h-[1px] w-[244px] bg-dark my-4">
+      <p class="text-base font-medium mb-4">Orange</p>
+      <img class="mb-6" src="images/Group 24.svg" alt="">
+      <div class="card-actions">
+        <button class="text-lg font-bold text-primary-color mb-12">Details</button>
+      </div>
+    </div>
+  </div>
+  <!-- =================== Card-3 ================= -->
+  <div class="card card-border">
+    <figure class="p-0">
+      <img src="images/fruit8.png" alt="Red Dragon" class="mt-14 mb-12" />
+    </figure>
+    <div class="card-body p-0 items-center text-center">
+      <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+      <hr class="h-[1px] w-[244px] bg-dark my-4">
+      <p class="text-base font-medium mb-4">Red Dragon</p>
+      <img class="mb-6" src="images/Group 24.svg" alt="">
+      <div class="card-actions">
+        <button class="text-lg font-bold text-primary-color mb-12">Details</button>
+      </div>
+    </div>
+  </div>
+  <!-- =================== Card-4 ================= -->
+  <div class="card card-border">
+    <figure class="p-0">
+      <img src="images/fruit9.png" alt="Banana" class="mt-14 mb-12" />
+    </figure>
+    <div class="card-body p-0 items-center text-center">
+      <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+      <hr class="h-[1px] w-[244px] bg-dark my-4">
+      <p class="text-base font-medium mb-4">Banana</p>
+      <img class="mb-6" src="images/Group 24.svg" alt="">
+      <div class="card-actions">
+        <button class="text-lg font-bold text-primary-color mb-12">Details</button>
+      </div>
+    </div>
+  </div>
+  
+ </div>
+
+ <button class="btn flex justify-center items-center">Button</button>
+
       </section>
     </main>
   </body>
